@@ -8,14 +8,15 @@ class Employee:
         self.eid = input("Enter the eid\n")
 
     def employee_details(self):
-            print(f"Name is {self.name}",f"Age is {self.age}", f"Phone is {self.phone}", f"Address is {self.address}",
-                  f"eid is {self.eid}")
+        print(f"Name is {self.name}", f"Age is {self.age}", f"Phone is {self.phone}", f"Address is {self.address}",
+              f"eid is {self.eid}")
+
     def walk(self):
         print("Employee is walking")
 
     def talk(self):
         print("Employee is talking")
-
+        print("Who is walking , E1")
 
 
 employee1 = Employee()
@@ -27,4 +28,3 @@ employee1.walk()
 employee2.walk()
 employee1.talk()
 employee2.talk()
-
