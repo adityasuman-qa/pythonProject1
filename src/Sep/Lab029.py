@@ -16,15 +16,15 @@ class Employee:
 
     def talk(self):
         print("Employee is talking")
-        print("Who is walking , E1")
+
 
 
 employee1 = Employee()
-employee2 = Employee()
+employee2= Employee()
 
 employee1.employee_details()
 employee2.employee_details()
 employee1.walk()
-employee2.walk()
+#employee2.walk()
 employee1.talk()
-employee2.talk()
+#employee2.talk()
