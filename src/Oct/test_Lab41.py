@@ -29,8 +29,19 @@ def testt_get_single_request_by_id():
 @allure.title("Test Get Request-RestFull BOOKER Project#1")
 @allure.description("TC#3 Verify that Get Request with invalid ID ")
 @pytest.mark.smoke
-def testt_get_single_request_by_id():
+def testt_get_single_request_by_invalid_id():
     url = "https://restful-booker.herokuapp.com/booking/784512"
+    response_data = requests.get(url)
+    print(response_data.text)
+    assert response_data.status_code == 404
+
+
+
+@allure.title("Test Get Request-RestFull BOOKER Project#1")
+@allure.description("TC#3 Verify that Get Request with invalid ID ")
+@pytest.mark.smoke
+def testt_get_single_request_by_number_name_id():
+    url = "https://restful-booker.herokuapp.com/booking/two"
     response_data = requests.get(url)
     print(response_data.text)
     assert response_data.status_code == 404
